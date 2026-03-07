@@ -1,0 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./styles/App.css";
+import { Home } from "./pages/Home.jsx";
+import { NotFound } from "./pages/NotFound.jsx";
+
+export const App = () => {
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
+};
