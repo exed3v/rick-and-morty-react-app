@@ -1,3 +1,5 @@
+import "../styles/Pagination.css";
+
 export const Pagination = ({ page, info, setPage }) => {
   return (
     <nav className="rm-pagination">

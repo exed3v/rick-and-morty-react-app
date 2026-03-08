@@ -1,4 +1,13 @@
-export const CharacterCard = ({ char, index, badgeClass }) => {
+import "../styles/CharacterCard.css";
+
+export const CharacterCard = ({ char, index }) => {
+  const badgeClass = (s) => {
+    const lower = s.toLowerCase();
+    if (lower === "alive") return "rm-badge rm-badge--alive";
+    if (lower === "dead") return "rm-badge rm-badge--dead";
+    return "rm-badge rm-badge--unknown";
+  };
+
   return (
     <div className="rm-card" style={{ animationDelay: `${index * 0.04}s` }}>
       <div className="rm-card__image-wrap">

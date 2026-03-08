@@ -1,0 +1,53 @@
+.rm-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 24px 16px;
+}
+
+.rm-toolbar__info {
+  font-size: 0.85rem;
+  color: var(--rm-text-muted);
+}
+
+.rm-toolbar__info span {
+  color: var(--rm-accent);
+  font-weight: 600;
+}
+
+.rm-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--rm-surface);
+  border: 1px solid var(--rm-border);
+  color: var(--rm-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: var(--rm-radius-sm);
+  cursor: pointer;
+  transition: var(--rm-transition);
+  font-family: var(--rm-font);
+}
+
+.rm-filter-btn:hover {
+  border-color: var(--rm-accent);
+  color: var(--rm-accent);
+}
+
+.rm-filter-btn--active {
+  border-color: var(--rm-accent);
+  color: var(--rm-accent);
+  background: var(--rm-accent-dim);
+}
+
+.rm-filter-btn__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--rm-accent);
+  box-shadow: 0 0 6px var(--rm-accent);
+}

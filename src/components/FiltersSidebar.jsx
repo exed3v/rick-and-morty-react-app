@@ -1,3 +1,5 @@
+import "../styles/FiltersSidebar.css";
+
 export const FiltersSidebar = ({
   sidebarOpen,
   setSidebarOpen,
@@ -6,6 +8,7 @@ export const FiltersSidebar = ({
   species,
   setSpecies,
   resetFilters,
+  name,
 }) => {
   return (
     <aside className={`rm-sidebar ${sidebarOpen ? "rm-sidebar--open" : ""}`}>

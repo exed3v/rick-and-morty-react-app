@@ -1,4 +1,11 @@
-export const Hero = ({ heroBg, scrollToGrid }) => {
+import "../styles/Hero.css";
+
+export const Hero = ({ heroBg }) => {
+  const scrollToGrid = () => {
+    const el = document.getElementById("rm-characters");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="rm-hero">
       <img src={heroBg} alt="" className="rm-hero__bg" />

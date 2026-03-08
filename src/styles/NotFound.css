@@ -1,0 +1,56 @@
+.rm-notfound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--rm-bg);
+  color: var(--rm-text);
+  font-family: var(--rm-font);
+}
+
+.rm-notfound__container {
+  text-align: center;
+  max-width: 420px;
+}
+
+.rm-notfound__code {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--rm-accent);
+  margin-bottom: 1rem;
+  text-shadow: var(--rm-accent-glow);
+}
+
+.rm-notfound__title {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.rm-notfound__description {
+  color: var(--rm-text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.rm-notfound__button {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--rm-radius-sm);
+  border: 1px solid var(--rm-accent);
+  color: var(--rm-accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--rm-transition);
+  background: transparent;
+}
+
+.rm-notfound__button:hover {
+  background: var(--rm-accent);
+  color: #000;
+  box-shadow: var(--rm-accent-glow);
+  transform: translateY(-2px);
+}
+
+.rm-notfound__button:active {
+  transform: translateY(0);
+}
